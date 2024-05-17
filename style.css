@@ -21,6 +21,18 @@
     --footer-big-font-size: 24px;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background: black;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner-title h1 {
+        font-size: 30px;
+    }
+} 
+
 @media screen and (min-width: 768px){
     :root { 
         --big-font-size: 12.25rem;
@@ -88,17 +100,17 @@ html{
 
 .coffee_container {
     height: 300px;
-    width: 700px;
+    width: 1400px;
     display: flex;
-    gap: 20px;
     padding: 50px;
-    justify-content: left;
+    margin-left: 20px;
 }
 
 .button {
     position: relative;
     top: -75px;
-    margin-left: 30px;
+    margin-left: 400px;
+    justify-content: center;
 }
 
 .coffeebeans img {
@@ -112,10 +124,11 @@ html{
 
 .btn-coffee {
     position: absolute;
-    color: rgb(255, 255, 255);
-    background: transparent;
+    color: var(--bg-color);
+    /* background: transparent; */
     width: 460px;
     padding: 10px;
+    background: #A27B5C;
     /* top: 935px;
     margin-left: 45px; */
     text-align: center;
@@ -125,8 +138,8 @@ html{
     cursor: pointer;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    /* -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); */
 }
 
 .btn-coffee:hover {
@@ -134,6 +147,96 @@ html{
     transform: scale(1.1);
 }
 
+.bg-coffee {
+    background-color: #f3ece5 ;
+}
+
+/* did you know banner */
+
+.b-img-container {
+        height: 500px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        filter: brightness(70%);
+        padding: 50px;
+        padding-top: 0;
+
+    
+}
+
+.coffee-farm {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.beans_title_container {
+    padding: 20px;
+}
+
+.beans_page_title h1 {
+    font-size: var(--banner-font-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color:#322C2B ;
+    font-family: 'DM  sans',sans-serif;
+    font-weight: 900;
+    letter-spacing: 4px;
+    padding-top: 80px;
+}
+
+.beans_page_title h1 span {
+    color: #dfad6f;
+    margin-left: 15px;
+    font-family: 'DM sans', sans-serif;
+    font-weight: 900;
+    letter-spacing: 4px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.beans_page_title h1 span:hover {
+    fill: none;
+    outline: #dfad6f;
+}
+
+.beans_page_title h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-family: 'DM sans', sans-serif;
+    color: #322C2B;
+    font-size: 24px;
+}
+
+.b-img-link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: -100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.496);
+        border-radius: .5rem;
+        cursor: pointer;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(4px);
+        transition: .3s;
+}
+
+.coffee-farm .b-img-link:hover {
+    bottom: 0;
+} 
 
 .logo {
     height: 65px;
@@ -160,7 +263,7 @@ html{
 
 .banner-title {
     position: absolute;
-    color: rgb(225, 225, 225);
+    color: #FEFAF6;
     top: 300px;
     padding-right: 600px;
     padding-left: 150px;
@@ -173,8 +276,7 @@ html{
     font-size: var(--banner-font-size);
     /* font-family: 'ephesis' sans-serif; */
     font-weight: bolder;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    font-size: 90px;
 }
 
 
@@ -185,6 +287,10 @@ html{
     font-weight: 200;
 }
 
+/* .banner-title p:hover {
+letter-spacing: 3px;
+} */
+
 .banner-title p span {
     color: #FFC100;
     font-style: italic;
@@ -192,11 +298,6 @@ html{
 }
 
 
-.banner-title h1:hover {
-    color: #dfad6f ;
-    letter-spacing: 5px;
-
-}
 
 .banner-title img {
     height: 40px;
@@ -287,12 +388,6 @@ html{
     object-position: center;
 }
 
-
-/* .manual_brew_section .menu_box .menu_card .menu_image img:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-} */
-
 .manual_brew_section .menu_box .menu_card .menu_info {
     margin-left: 13px;
     color: #322C2B;
@@ -316,11 +411,9 @@ html{
     font-size: 1rem;
     color: #4d4343;
 }
-
 }
 
 /* navbar_menu */
-
 .nav {
     height: 2rem;
     display: flex;
@@ -353,7 +446,7 @@ html{
 }
 
 .active::after{
-    background-color: var(--first-color);
+    background-color: #dfad6f;
 }
 
 
@@ -395,7 +488,6 @@ a {
     color:#322C2B ;
     font-family: 'DM  sans',sans-serif;
     font-weight: 900;
-    letter-spacing: 4px;
 
 }
 
@@ -575,6 +667,22 @@ a {
     transform: scale(1.1);
 }
 
+.bg-vid {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    filter:opacity(60%);
+    z-index: -99;
+}
+
+.bg-vid video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 110%;
+    z-index: -99;
+}
+
 .nav_toggle {
     color: #f7f7f7;
     font-size: 1.5rem;
@@ -600,7 +708,7 @@ a {
 /* footer section */
 
 .footer{
-    background-color: #A27B5C;
+    background-color: #e6d7c9;
     padding: 2rem;
     width: 100%;
     bottom: 0;
@@ -617,19 +725,20 @@ a {
 
 .footer__title{
     font-size: var(--footer-big-font-size);
-    color: var(--bg-color);
+    color: var(--first-color);
     margin-bottom: 1rem;
     font-family: 'poppins', sans-serif;
     justify-content: center;
 }
 
 .footer__text {
-    color: #FEFDED;
+    color: var(--first-color);
 }
 
 .footer__link{
-    color: var(--bg-color);
+    color: var(--first-color);
     margin-right: 50px;
+    letter-spacing: 2px;
 }
 
 .footer__link:hover{
@@ -639,7 +748,7 @@ a {
 .footer__social{
     font-size: 1.4rem;
     margin-right: .5rem;
-    color: var(--bg-color);
+    color: var(--first-color);
 }
 
 .footer__social:hover{
@@ -654,10 +763,14 @@ a {
 
     /* Location Page */
 
+    .map_location {
+        padding: 20px;
+    }
+
     .map_location iframe {
         padding-top: 100px;
         height: 100%;
-        width: 50%;
+        width: 100%;
         display: flex;
         padding-left: 20px;
 
@@ -668,6 +781,198 @@ a {
 
 
 }
+
+#contact {
+    background: #121212;
+}
+
+.bg-img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #FEFAF6;
+    font-family: 'DM sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+.contact .content h2 {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.contact .content h2:hover {
+    letter-spacing: 5px;
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: #FEFAF6;
+}
+
+.contact .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contact-info .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #FEFAF6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contact-info .box .text {
+    display: flex;
+    margin-left: 20px ;
+    font-size: 16px;
+    color: #FEFAF6;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+
+.contact-info .box .text h3 {
+    font-weight: 500;
+    color: #dfad6f;
+}
+
+.contact-form {
+    width: 40%;
+    padding: 40px;
+    /* background: #e6d7c9; */
+    background: transparent;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    color: #dfad6f;
+    font-weight: 500;
+}
+
+.contact-form .inputbox {
+    position: relative;
+    width: 100%;
+}
+
+.contact-form .inputbox input {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #b66e3b;
+    outline: none;
+    resize: none;
+} 
+.contact-form .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #b66e3b;
+    outline: none;
+    resize: none;
+}
+
+.contact-form .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #b66e3b;
+}
+
+
+
+.contact-form .inputbox input:focus ~ span,
+.contact-form .inputbox input:valid ~ span,
+.contact-form .inputbox textarea:focus ~ span,
+.contact-form .inputbox textarea:valid ~ span
+{
+    color: #FEFAF6;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact-form .inputbox input[type="submit"]
+{
+    width: 100px;
+    background-color: #FEFAF6;
+    color: #803D3B;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 10px;
+}
+
+
+
+@media (max-width: 991px) {
+    .contact{
+        padding: 50px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .contact-info{
+        margin-bottom: 40px;
+    }
+    .container .contact-info, .contact-form {
+        width: 100%;
+    }
+}
+
 
 
 

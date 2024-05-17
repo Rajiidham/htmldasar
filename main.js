@@ -42,6 +42,10 @@ function scrollActive() {
 sr.reveal('.banner-title',{delay: 50,});
 sr.reveal('.banner-title p',{delay: 200,});
 sr.reveal('.page_title', {delay: 50});
+sr.reveal('.beans_page_title', {delay: 50});
+sr.reveal('.beans_page_title h3', {delay: 200});
+
+
 // sr.reveal('.coffeebeans', {delay: 50});
 // sr.reveal('.coffeebeans h1', {delay: 50});
 
