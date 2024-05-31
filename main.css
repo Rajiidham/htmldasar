@@ -19,17 +19,97 @@ body {
     margin-top: 90px;
 }
 
+.login-button {
+    background-color: #009970;
+    color: #FEFAF6;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s ;
+    margin-right: 5px;
+}
+
+.login-button:hover {
+    background-color: #ffffff;
+    color: #009970;
+}
+
+.logout-button {
+    background-color: #7b1717;
+    color: #FEFAF6;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s ;
+    margin-right: 5px;
+}
+
+.logout-button:hover {
+    background-color: #ffffff;
+    color: #7b1717;
+}
+
+.register-button {
+    background-color: #ad3632;
+    color: #FEFAF6;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s ;
+    margin-right: 5px;
+}
+
+.register-button:hover {
+    background-color: #FEFAF6;
+    color: #ad3632;
+}
+
+.admin-button {
+    background-color: #d9cd4a;
+    color: #FEFAF6;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s ;
+    margin-right: 5px;
+}
+
+.admin-button:hover {
+    background-color: #FEFAF6;
+    color: #d9cd4a;
+}
+
+.cart-button {
+    background-color: #c29154;
+    color: #FEFAF6;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s ;
+
+}
+
+.cart-button:hover {
+    background-color: #FEFAF6;
+    color: #c29154;
+}
+
 .navbar {
     background-color: #FEFAF6;
     height: 80px;
     margin: 20px;
     border-radius: 16px;
     padding: 0.5rem;
-    border: 1px solid #cccccc;
+    border: 2px solid #cccccc;
 }
 
 .navbar-brand  {
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 900;
     font-family: 'Berlin Sans FB', sans-serif;
     color: #c29154;
@@ -57,11 +137,11 @@ body {
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #c29154;
+    color: #322C2B;
 }
 
 .nav-link.active {
-    color: #c29154;
+    color: #322C2B;
 }
 
 
@@ -82,6 +162,10 @@ body {
 .nav-link:hover::before, .nav-link.active::before {
     width: 100%;
     visibility: visible;
+}
+
+.navbar-brand {
+    font-size: 24px;
 }
 }
 
@@ -171,10 +255,19 @@ body {
     padding: 100px 0;
 }
 
+/* menu section */
+
+/* .menu .img-area img {
+    width: 200px;
+    height: auto;
+} */
+
+
+
 /* promotion promotion */
 
 .area-1 {
-    background-image: linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(assets/image/coffeebeans.jpg);
+    background-image: linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(assets/image/nguyen-tong-hai-van-b8xo59IcAUY-unsplash.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -238,4 +331,57 @@ body {
 
 .location .col-12{
     padding-bottom: 30px;
+}
+
+.img-area img {
+    width: 350px;
+    height: auto;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #322C2B;
+    border-top: 23px solid #4e4745;
+}
+
+footer a {
+    text-decoration: none;
+    list-style: none;
+    color: #FEFAF6;
+    font-family: 'raleway', sans-serif;
+}
+
+footer p {
+    color: #FEFAF6;
+}
+
+footer .text-uppercase {
+    font-weight: 700;
+    color: #FEFAF6;
+}
+
+footer .col-md-3 p , .col-md-4 p{
+    font-family: 'raleway', sans-serif;
+}
+
+.list-inline-item i {
+    font-size: 25px;
+}
+
+/* gallery page */
+
+.gallery {
+    background-color: #FEFAF6;
+    padding: 80px 0;
+}
+
+.gallery img {
+    max-width: 100%;
+    background-color: #FEFAF6;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    cursor: pointer;
 }

@@ -15,6 +15,9 @@
         rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <script src="https://kit.fontawesome.com/7881f2646c.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="main.css">
 </head>
 
@@ -23,13 +26,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Sellie Coffee
+            <a class="navbar-brand me-auto" href="#">Sellie Coffee
                 <!-- <img src="assets/image/logosellie.png" alt=""> -->
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
@@ -48,12 +47,20 @@
                             <a class="nav-link mx-lg-2" href="#">Product</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Location</a>
+                            <a class="nav-link mx-lg-2" href="gallery.html">Our Gallery</a>
                         </li>
-                    
                     </ul>
                 </div>
             </div>
+            <a href="#" class="login-button">Login</a>
+            <a href="#" class="logout-button">Logout</a>
+            <a href="#" class="register-button">Register</a>
+            <a href="#" class="admin-button">Admin</a>
+            <a href="#" class="cart-button"><i class="fa-solid fa-cart-shopping"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
     <!-- End Navbar -->
@@ -84,7 +91,7 @@
                 <div class="col-lg-6 offset-lg-3 col-sm-12 text-center">
                     <div class="about-content">
                         <img src="assets/image/about-sellie.jpg" alt="">
-                        <h2>Reputed Coffee Shop in Yogyakarta, <br> Indonesia</h2>
+                        <h2>Reputed Coffee Shop in Yogyakarta, Indonesia</h2>
                         <p>Sellie Coffee, nestled in the heart of Jogja, 
                             Indonesia, is renowned for its traditional coffee 
                             and offers a cozy place to hang out,
@@ -122,7 +129,7 @@
                 <div class="col-sm-12">
                     <div class="section-header text-center">
                         <h2>Our Menu</h2>
-                        <p>#</p>
+                        <p>taste the combination of manual brewed coffee with local snacks </p>
                     </div>
                 </div>
             </div>
@@ -131,10 +138,10 @@
                     <div class="card text-center">
                         <div class="card-body">
                             <div class="img-area mb-4">
-                                <img src="assets/image/coffeepng.png" alt="">
+                                <img src="assets/image/eskopiceunah.png" alt="">
                             </div>
                             <h3 class="card-title">Coffee</h3>
-                            <p>#</p>
+                            <p>Manual brewed coffee, iced coffee, hot ,etc </p>
                         </div>
                     </div>
                 </div>
@@ -142,10 +149,10 @@
                     <div class="card text-center">
                         <div class="card-body">
                             <div class="img-area mb-4">
-                                <img src="assets/image/pngjuice.png" alt="">
+                                <img src="assets/image/jusapel.png" alt="">
                             </div>
                             <h3 class="card-title">Non-Coffee Drinks</h3>
-                            <p>#</p>
+                            <p>juice, float, herbal.</p>
                         </div>
                     </div>
                 </div>
@@ -156,7 +163,7 @@
                                 <img src="assets/image/tahu.png" alt="">
                             </div>
                             <h3 class="card-title">Local Snacks</h3>
-                            <p>#</p>
+                            <p>tahu genjot</p>
                         </div>
                     </div>
                 </div>
@@ -168,12 +175,12 @@
 
         <!-- promotion section -->
 
-        <div class="area-1 section-padding text-center">
+        <div class="area-2 section-padding text-center">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 col-sm-12">
-                        <h2>Checkout Our Fresh Coffee Beans!</h2>
-                        <p>The best we provide for you!</p>
+                        <h2>What are you waiting for?</h2>
+                        <p>Checkout our delicious menu!</p>
     
                         <a href="#" class="btn btn-warning">Learn More</a>
                     </div>
@@ -191,7 +198,7 @@
                     <div class="col-md-12">
                         <div class="section-header text-center pb-5">
                             <h2>Sellie Coffee</h2>
-                            <p></p>
+                            <p>The things we offer you at Sellie!</p>
                         </div>
                     </div>
                 </div>
@@ -201,6 +208,11 @@
                             <div class="card-body">
                                 <h3 >Fresh Ingredients</h3>
                                 <p>Ensure all food and beverages are made with fresh, high-quality ingredients. This applies to coffee beans, teas, pastries, and any other menu items.</p>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
                             </div>
                         </div>
                     </div>
@@ -209,6 +221,11 @@
                             <div class="card-body">
                                 <h3 >Pleasant Atmosphere</h3>
                                 <p>Maintain a welcoming vibe with background music that suits the cafe's theme, pleasant aromas from freshly brewed coffee, and a friendly, attentive staff.</p>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
                             </div>
                         </div>
                     </div>
@@ -217,6 +234,11 @@
                             <div class="card-body">
                                 <h3 >Friendly Staff</h3>
                                 <p>baristas and servers are skilled, also personable and customer-focused. Regular training on customer service can make a big difference.</p>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
                             </div>
                         </div>
                     </div>
@@ -245,8 +267,8 @@
                         <img src="assets/image/wisata-kuliner-malioboro-819x1024.jpg" alt="" class="img-fluid">
                     </div>
                     <h3>Sellie Malioboro</h3>
-                    <p>#</p>
-                    <a href="https://maps.app.goo.gl/N7jY3eTTGWQ9eoVc6"  class="btn bg-warning text-dark">Check</a>
+                    <p>drink coffee in the bustling atmosphere of malioboro</p>
+                    <a href="https://maps.app.goo.gl/N7jY3eTTGWQ9eoVc6" target="_blank" class="btn bg-warning text-dark">Check</a>
                 </div>
             </div>
         </div>
@@ -254,11 +276,11 @@
             <div class="card text-center bg-white pb-2">
                 <div class="card-body text-dark">
                     <div class="img-area mb-4">
-                        <img src="assets/image/wisata-kuliner-malioboro-819x1024.jpg" alt="" class="img-fluid">
+                        <img src="assets/image/selliemal.png" alt="" class="img-fluid">
                     </div>
                     <h3>Sellie Kopi Macan</h3>
-                    <p>#</p>
-                    <a href="#"  class="btn bg-warning text-dark">Check</a>
+                    <p>Drinking coffee in the company of beautiful works of art</p>
+                    <a href=""  class="btn bg-warning text-dark">Check</a>
                 </div>
             </div>
         </div>
@@ -269,16 +291,102 @@
                         <img src="assets/image/wisata-kuliner-malioboro-819x1024.jpg" alt="" class="img-fluid">
                     </div>
                     <h3>Sellie Coffee Paris</h3>
-                    <p>#</p>
-                    <a href="#"  class="btn bg-warning text-dark">Check</a>
+                    <p>Enjoy manual brewed coffee with a simple and traditional cafe feel</p>
+                    <a href="https://maps.app.goo.gl/L7NtPJu4V2j6FpN49"  class="btn bg-warning text-dark">Check</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 </section>
+<!-- end Location -->
 
+<!-- footer -->
 
+<footer class="pt-5 pb-4">
+<div class="container text-center text-md-left">
+    <div class="row">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4">Sellie Coffee</h5>
+            <p>"Brewing Community, <br> One Cup at a Time"</p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl mx-auto mt-3">
+            <h5 class="text-uppercase mb-4">Products</h5>
+            <p>
+                <a href="#" class="Footer-detail" style="text-decoration: none;">Fresh coffee beans</a>
+            </p>
+            <p>
+                <a href="#" class="Footer-detail">Coffee Based Drinks</a>
+            </p>
+            <p>
+                <a href="#" class="Footer-detail">Tasty Local Snacks</a>
+            </p>
+            <p>
+                <a href="#" class="Footer-detail">Manual Brewed Coffee</a>
+            </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4">Useful Links</h5>
+
+            <p>
+                <a href="#" class="Footer-detail">Menu</a>
+            </p>
+            <p>
+                <a href="#" class="Footer-detail">Products</a>
+            </p>
+            <p>
+                <a href="#" class="Footer-detail">Contact Us</a>
+            </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4">Contact</h5>
+
+            <p>
+                <i class="uil uil-estate mr-3"></i>Yogyakarta, Indonesia
+            </p>
+            <p>
+                <i class="uil uil-envelope mr-3"></i>dummy@gmail.com
+            </p>
+            <p>
+                <i class="uil uil-phone mr-3"></i>+62 5555 ****
+            </p>
+        </div>
+
+        <hr class="mb-4">
+
+        <div class="row align-item-center">
+            <div class="col-md-7 col-lg-8">
+                <p> Copyright @2024 All Rights Reserved by:
+                <a href="#">
+                    <strong>Sellie Coffee</strong>
+                </a></p>
+            </div>
+
+            <div class="col-md-5 col-lg-4">
+                <div class="text-center text-md-right">
+                    
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white"><i class="fa-brands fa-tiktok"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+<!-- end footer -->
 
 
 
