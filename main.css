@@ -65,7 +65,7 @@ body {
     color: #fff;
     padding: 0 5px;
     vertical-align: top;
-    margin-left: -12px;
+    margin-left: -15px;
 }
 
 .register-button {
@@ -85,7 +85,7 @@ body {
 }
 
 .admin-button {
-    background-color: #d9cd4a;
+    background-color: #0f7fbb;
     color: #FEFAF6;
     font-size: 14px;
     padding: 8px 20px;
@@ -97,7 +97,7 @@ body {
 
 .admin-button:hover {
     background-color: #FEFAF6;
-    color: #d9cd4a;
+    color: #0f7fbb;
 }
 
 .cart-button {
@@ -243,7 +243,7 @@ body {
 }
 
 .about-content h2 {
-    font-family: 'Helvetica Now MT Disp', sans-serif;
+    font-family: 'berlin sans fb', sans-serif;
     font-weight: 500;
     font-size: 35px;
     line-height: 1.5;
@@ -343,6 +343,10 @@ body {
     font-family: 'raleway', sans-serif;
 }
 
+/* .card-body .fa {
+    color: #ffd900;
+} */
+
 
 /* location */
 
@@ -359,8 +363,8 @@ body {
 /* footer */
 
 footer {
-    background-color: #322C2B;
-    border-top: 23px solid #4e4745;
+    background-color: #c29154;
+    border-top: 23px solid #dba768;
 }
 
 footer a {
